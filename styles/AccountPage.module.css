@@ -1,0 +1,166 @@
+/* Default styles for larger screens */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Styling for the page heading */
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Styling for the navigation list */
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for each tab */
+.tab {
+  padding: 15px;
+  cursor: pointer;
+  color: #34495e;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f5f6fa;
+  text-align: center;
+}
+
+/* Styling for the active tab */
+.activeTab {
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #141414;
+  text-align: center;
+}
+
+/* Styling for the delete account tab */
+.deleteTab {
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #e74c3c;
+  text-align: center;
+}
+
+/* Styling for modals */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modalTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #141414;
+}
+
+.modalText {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.confirmButton {
+  background-color: #141414;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.cancelButton {
+  background-color: #fff;
+  color: #141414;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #141414;
+}
+
+.modalInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+  }
+  .tab,
+  .activeTab,
+  .deleteTab {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
